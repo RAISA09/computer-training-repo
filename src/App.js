@@ -9,13 +9,20 @@ import Services from './components/Services/Services';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound'
+import Footer from './components/Footer/Footer';
 
+// app components
 function App() {
   return (
+    // All Route calling
     <div className="App">
      <Router>
+     <Header></Header>
        <Switch>
          <Route path="/home">
+          <Home></Home>
+         </Route>
+         <Route exact path="/">
           <Home></Home>
          </Route>
          <Route path="/services">
@@ -31,6 +38,7 @@ function App() {
           <NotFound></NotFound>
          </Route>
        </Switch>
+       <Footer></Footer>
      </Router>
     </div>
   );

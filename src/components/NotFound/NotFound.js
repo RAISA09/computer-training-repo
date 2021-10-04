@@ -1,6 +1,7 @@
 import React from 'react';
 
 const NotFound = () => {
+  // Not found components
     return (
         <div>
           <h1>404</h1> 

@@ -2,6 +2,7 @@ import React from 'react';
 import img from '../../img/istockphoto-669775712-612x612.jpg'
 import './Introduction.css'
 const Introduction = () => {
+    // introduction components
     return (
         <div className="intro-style">
              <div className="row py-5">

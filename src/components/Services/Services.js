@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 import Service from '../Service/Service';
-
+import './Services.css'
+// services components
 const Services = () => {
+    // services state
     const [services,setServices] = useState([])
-
+    // services api calling
     useEffect(()=> {
         fetch('./courses.json')
         .then(res=> res.json())
@@ -14,7 +14,7 @@ const Services = () => {
     },[])
     return (
        <div>
-            <Header></Header>
+           <h2 className="all-course">Computer All Courses</h2>
         <Row xs={1} md={2} className="g-4 home-style">
         {
              services.map(service => <Service
@@ -22,7 +22,6 @@ const Services = () => {
                  service={service}></Service>)
          }
         </Row>
-        <Footer></Footer>
        </div>
     );
 };

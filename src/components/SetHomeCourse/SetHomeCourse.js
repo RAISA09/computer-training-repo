@@ -1,8 +1,9 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import './SetHomeCourse.css'
-
+// Set home course components
 const SetHomeCourse = (props) => {
+    // distructing
     const {name,img, duration,fee} = props.setHomeCourse
     return (
      

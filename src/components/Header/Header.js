@@ -4,6 +4,7 @@ import './Header.css'
 
 const Header = () => {
     return (
+      // header components
         <div className="MenuBar-container header-style">
         <div className="container">
           <div className="row">

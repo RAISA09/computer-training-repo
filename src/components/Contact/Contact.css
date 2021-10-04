@@ -1,0 +1,19 @@
+/* contact css class */
+
+.contact{
+    background-image: url('../../img/istockphoto-669775712-612x612.jpg');
+    height: 600px;
+    
+}
+.text{
+    color: black;
+    padding: 50px;
+    margin-left:300px ;
+    margin-right: 300px;
+}
+.carts{
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+}

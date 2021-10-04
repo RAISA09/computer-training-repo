@@ -5,10 +5,11 @@ import Header from '../Header/Header';
 import Introduction from '../Introduction/Introduction';
 import SetHomeCourse from '../SetHomeCourse/SetHomeCourse';
 import './Home.css'
-
+// home components
 const Home = () => {
+    // home state
     const [homeCourses, setHomeCourses] = useState([]);
-
+    //  home Api calling
     useEffect( () => {
         fetch("./home.json")
         .then(res => res.json())
@@ -16,7 +17,6 @@ const Home = () => {
     },[])
     return (
         <div>
-            <Header></Header>
             <Introduction></Introduction>
             <Row xs={1} md={2} className="g-4 home-style">
            {
@@ -26,7 +26,6 @@ const Home = () => {
             }
            </Row>
            
-            <Footer></Footer>
         </div>
     );
 };
