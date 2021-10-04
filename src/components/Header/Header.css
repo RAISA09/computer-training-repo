@@ -1,0 +1,30 @@
+.header-style{
+    margin-bottom: 10px;
+}
+
+.computer-training{
+  padding-top: 10px;
+  color: grey;
+}
+
+.items {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    color: grey;
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+   
+  }
+  .items:hover{
+    color: rgba(255, 255, 255, 0.904);
+    background-color: lightgray;
+    padding-bottom: 5px;
+    border-radius: 5px;
+  }
+  .MenuBar-container{
+      background-color: black;
+  }
